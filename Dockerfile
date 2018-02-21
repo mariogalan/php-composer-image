@@ -16,5 +16,3 @@ RUN echo $TZ > /etc/timezone && \
 RUN apt-get install -y git curl php-cli php7.1-dom php7.1-zip
 
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=bin --filename=composer
-
-CMD [']
