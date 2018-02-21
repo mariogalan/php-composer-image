@@ -13,6 +13,8 @@ RUN echo $TZ > /etc/timezone && \
     apt-get clean
 
 
-RUN apt-get install -y git curl php-cli
+RUN apt-get install -y git curl php-cli php7.1-dom
 
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=bin --filename=composer
+
+CMD [']
